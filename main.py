@@ -1,8 +1,8 @@
 def generator():
     x = 0
     while True:
-        h = yield x
-        if h == False or h == True:
+        flag = yield x
+        if flag is not None:
             x += 1
             yield x
         else:
