@@ -10,9 +10,8 @@ def generator():
                 x += 2
         except ValueError:
             x = 0
+            print('Reset generator')
             yield x
-            print('Сброс генератора')
-
 
 
 if __name__ == '__main__':
